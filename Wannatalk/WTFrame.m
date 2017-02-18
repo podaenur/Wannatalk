@@ -16,20 +16,6 @@ static NSString *const sourceSizeKey = @"sourceSize";
 
 @implementation WTFrame
 
-+ (instancetype)modelFromDictionary:(NSDictionary *)dictionary {
-    NSAssert(dictionary[frameKey], nil);
-    NSAssert(dictionary[offsetKey], nil);
-    NSAssert(dictionary[rotatedKey], nil);
-    NSAssert(dictionary[sourceColorRectKey], nil);
-    NSAssert(dictionary[sourceSizeKey], nil);
-    
-    return [[WTFrame alloc] initWithFrame:dictionary[frameKey]
-                                   offset:dictionary[offsetKey]
-                                  rotated:[dictionary[rotatedKey] boolValue]
-                          sourceColorRect:dictionary[sourceColorRectKey]
-                               sourceSize:dictionary[sourceSizeKey]];
-}
-
 - (instancetype)initWithFrame:(NSString *)f
                        offset:(NSString *)o
                       rotated:(BOOL)r
@@ -44,6 +30,27 @@ static NSString *const sourceSizeKey = @"sourceSize";
         _sourceSize = CGVectorFromString(sSize);
     }
     return self;
+}
+
+#pragma mark - Protocol conformance
+#pragma mark WTParsing
+
++ (instancetype)modelFromDictionary:(NSDictionary *)dictionary {
+    NSAssert(dictionary[frameKey], nil);
+    NSAssert(dictionary[offsetKey], nil);
+    NSAssert(dictionary[rotatedKey], nil);
+    NSAssert(dictionary[sourceColorRectKey], nil);
+    NSAssert(dictionary[sourceSizeKey], nil);
+    
+    return [[WTFrame alloc] initWithFrame:dictionary[frameKey]
+                                   offset:dictionary[offsetKey]
+                                  rotated:[dictionary[rotatedKey] boolValue]
+                          sourceColorRect:dictionary[sourceColorRectKey]
+                               sourceSize:dictionary[sourceSizeKey]];
+}
+
+- (NSString *)rootKey {
+    return @"frames";
 }
 
 @end

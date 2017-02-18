@@ -16,20 +16,6 @@ static NSString *const textureFileNameKey = @"textureFileName";
 
 @implementation WTMetadata
 
-+ (instancetype)modelFromDictionary:(NSDictionary *)dictionary {
-    NSAssert(dictionary[formatKey], nil);
-    NSAssert(dictionary[realTextureFileNameKey], nil);
-    NSAssert(dictionary[sizeKey], nil);
-    NSAssert(dictionary[smartupdateKey], nil);
-    NSAssert(dictionary[textureFileNameKey], nil);
-    
-    return [[WTMetadata alloc] initWithFormat:[dictionary[formatKey] integerValue]
-                          realTextureFileName:dictionary[realTextureFileNameKey]
-                                         size:dictionary[sizeKey]
-                                  smartupdate:dictionary[smartupdateKey]
-                              textureFileName:dictionary[textureFileNameKey]];
-}
-
 - (instancetype)initWithFormat:(NSInteger)f
            realTextureFileName:(NSString *)rtName
                           size:(NSString *)s
@@ -45,6 +31,27 @@ static NSString *const textureFileNameKey = @"textureFileName";
         _textureFileName = tName;
     }
     return self;
+}
+
+#pragma mark - Protocol conformance
+#pragma mark WTParsing
+
++ (instancetype)modelFromDictionary:(NSDictionary *)dictionary {
+    NSAssert(dictionary[formatKey], nil);
+    NSAssert(dictionary[realTextureFileNameKey], nil);
+    NSAssert(dictionary[sizeKey], nil);
+    NSAssert(dictionary[smartupdateKey], nil);
+    NSAssert(dictionary[textureFileNameKey], nil);
+    
+    return [[WTMetadata alloc] initWithFormat:[dictionary[formatKey] integerValue]
+                          realTextureFileName:dictionary[realTextureFileNameKey]
+                                         size:dictionary[sizeKey]
+                                  smartupdate:dictionary[smartupdateKey]
+                              textureFileName:dictionary[textureFileNameKey]];
+}
+
+- (NSString *)rootKey {
+    return @"metadata";
 }
 
 @end
