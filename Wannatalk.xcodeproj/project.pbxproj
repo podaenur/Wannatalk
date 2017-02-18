@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA5B80231E58EF2700AE65DD /* WTpListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5B80221E58EF2700AE65DD /* WTpListParser.m */; };
 		EA7995541E58AB5F00FEEF40 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = EA7995521E58AB5E00FEEF40 /* LICENSE */; };
 		EA7995551E58AB5F00FEEF40 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EA7995531E58AB5F00FEEF40 /* README.md */; };
 		EA7995581E58ACC700FEEF40 /* game1_table_apple_one.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7995561E58ACC700FEEF40 /* game1_table_apple_one.png */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA5B80211E58EF2700AE65DD /* WTpListParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTpListParser.h; sourceTree = "<group>"; };
+		EA5B80221E58EF2700AE65DD /* WTpListParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTpListParser.m; sourceTree = "<group>"; };
 		EA7995521E58AB5E00FEEF40 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EA7995531E58AB5F00FEEF40 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EA7995561E58ACC700FEEF40 /* game1_table_apple_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = game1_table_apple_one.png; sourceTree = "<group>"; };
@@ -79,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA5B80201E58EF0600AE65DD /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				EA5B80211E58EF2700AE65DD /* WTpListParser.h */,
+				EA5B80221E58EF2700AE65DD /* WTpListParser.m */,
+			);
+			name = Parsers;
+			sourceTree = "<group>";
+		};
 		EA79955A1E58AD5B00FEEF40 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +162,7 @@
 			children = (
 				EADE8BC01E58A6350025CA98 /* Apps */,
 				EA79955A1E58AD5B00FEEF40 /* Entities */,
+				EA5B80201E58EF0600AE65DD /* Parsers */,
 				EAC3B7631E58E7FA002DEF30 /* Protocols */,
 				EADE8BBF1E58A5FC0025CA98 /* Screens */,
 			);
@@ -319,6 +332,7 @@
 				EA7995551E58AB5F00FEEF40 /* README.md in Sources */,
 				EA955AFC1E58A41D0024B9B8 /* main.m in Sources */,
 				EA7995631E58ADFA00FEEF40 /* WTMetadata.m in Sources */,
+				EA5B80231E58EF2700AE65DD /* WTpListParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
