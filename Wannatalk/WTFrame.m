@@ -41,7 +41,7 @@ static NSString *const sourceSizeKey = @"sourceSize";
         _offset = CGPointFromString(o);
         _rotated = r;
         _sourceColorRect = CGRectFromString(scRect);
-        _sourceSize = CGSizeFromString(sSize);
+        _sourceSize = CGVectorFromString(sSize);
     }
     return self;
 }

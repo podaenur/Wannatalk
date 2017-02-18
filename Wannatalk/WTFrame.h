@@ -14,7 +14,7 @@
 @property (nonatomic, readonly, assign) CGPoint offset;
 @property (nonatomic, readonly, assign, getter=isRotated) BOOL rotated;
 @property (nonatomic, readonly, assign) CGRect sourceColorRect;
-@property (nonatomic, readonly, assign) CGSize sourceSize;
+@property (nonatomic, readonly, assign) CGVector sourceSize;
 
 + (instancetype)modelFromDictionary:(NSDictionary *)dictionary;
 
