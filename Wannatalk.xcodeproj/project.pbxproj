@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA955AFC1E58A41D0024B9B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA955AFB1E58A41D0024B9B8 /* main.m */; };
+		EA955AFF1E58A41D0024B9B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA955AFE1E58A41D0024B9B8 /* AppDelegate.m */; };
+		EA955B071E58A41D0024B9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA955B061E58A41D0024B9B8 /* Assets.xcassets */; };
+		EA955B0A1E58A41D0024B9B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA955B081E58A41D0024B9B8 /* LaunchScreen.storyboard */; };
+		EADE8BCB1E58A6FD0025CA98 /* WTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EADE8BC91E58A6FD0025CA98 /* WTMainViewController.m */; };
+		EADE8BCC1E58A6FD0025CA98 /* WTMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EADE8BCA1E58A6FD0025CA98 /* WTMainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA955AF71E58A41D0024B9B8 /* Wannatalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wannatalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA955AFB1E58A41D0024B9B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA955AFD1E58A41D0024B9B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA955AFE1E58A41D0024B9B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA955B061E58A41D0024B9B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA955B091E58A41D0024B9B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA955B0B1E58A41D0024B9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EADE8BBC1E58A4FC0025CA98 /* Default.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Default.xcconfig; sourceTree = "<group>"; };
+		EADE8BC81E58A6FD0025CA98 /* WTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMainViewController.h; sourceTree = "<group>"; };
+		EADE8BC91E58A6FD0025CA98 /* WTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMainViewController.m; sourceTree = "<group>"; };
+		EADE8BCA1E58A6FD0025CA98 /* WTMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTMainViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA955AF41E58A41D0024B9B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA955AEE1E58A41D0024B9B8 = {
+			isa = PBXGroup;
+			children = (
+				EA955AF91E58A41D0024B9B8 /* Wannatalk */,
+				EA955AF81E58A41D0024B9B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA955AF81E58A41D0024B9B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA955AF71E58A41D0024B9B8 /* Wannatalk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA955AF91E58A41D0024B9B8 /* Wannatalk */ = {
+			isa = PBXGroup;
+			children = (
+				EADE8BBD1E58A5090025CA98 /* Code */,
+				EADE8BBE1E58A50D0025CA98 /* Resources */,
+				EA955AFA1E58A41D0024B9B8 /* Supporting Files */,
+			);
+			path = Wannatalk;
+			sourceTree = "<group>";
+		};
+		EA955AFA1E58A41D0024B9B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EADE8BBC1E58A4FC0025CA98 /* Default.xcconfig */,
+				EA955B0B1E58A41D0024B9B8 /* Info.plist */,
+				EA955AFB1E58A41D0024B9B8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EADE8BBD1E58A5090025CA98 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				EADE8BC01E58A6350025CA98 /* Apps */,
+				EADE8BBF1E58A5FC0025CA98 /* Screens */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		EADE8BBE1E58A50D0025CA98 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA955B061E58A41D0024B9B8 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EADE8BBF1E58A5FC0025CA98 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				EADE8BC21E58A6A90025CA98 /* Main */,
+				EADE8BC11E58A6600025CA98 /* Launch */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		EADE8BC01E58A6350025CA98 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				EA955AFD1E58A41D0024B9B8 /* AppDelegate.h */,
+				EA955AFE1E58A41D0024B9B8 /* AppDelegate.m */,
+			);
+			name = Apps;
+			sourceTree = "<group>";
+		};
+		EADE8BC11E58A6600025CA98 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				EA955B081E58A41D0024B9B8 /* LaunchScreen.storyboard */,
+			);
+			name = Launch;
+			sourceTree = "<group>";
+		};
+		EADE8BC21E58A6A90025CA98 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EADE8BC81E58A6FD0025CA98 /* WTMainViewController.h */,
+				EADE8BC91E58A6FD0025CA98 /* WTMainViewController.m */,
+				EADE8BCA1E58A6FD0025CA98 /* WTMainViewController.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA955AF61E58A41D0024B9B8 /* Wannatalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA955B0E1E58A41D0024B9B8 /* Build configuration list for PBXNativeTarget "Wannatalk" */;
+			buildPhases = (
+				EA955AF31E58A41D0024B9B8 /* Sources */,
+				EA955AF41E58A41D0024B9B8 /* Frameworks */,
+				EA955AF51E58A41D0024B9B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wannatalk;
+			productName = Wannatalk;
+			productReference = EA955AF71E58A41D0024B9B8 /* Wannatalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA955AEF1E58A41D0024B9B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WT;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Evgeniy Akhmerov";
+				TargetAttributes = {
+					EA955AF61E58A41D0024B9B8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UGFFRZX2C8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EA955AF21E58A41D0024B9B8 /* Build configuration list for PBXProject "Wannatalk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA955AEE1E58A41D0024B9B8;
+			productRefGroup = EA955AF81E58A41D0024B9B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA955AF61E58A41D0024B9B8 /* Wannatalk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA955AF51E58A41D0024B9B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA955B0A1E58A41D0024B9B8 /* LaunchScreen.storyboard in Resources */,
+				EA955B071E58A41D0024B9B8 /* Assets.xcassets in Resources */,
+				EADE8BCC1E58A6FD0025CA98 /* WTMainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA955AF31E58A41D0024B9B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EADE8BCB1E58A6FD0025CA98 /* WTMainViewController.m in Sources */,
+				EA955AFF1E58A41D0024B9B8 /* AppDelegate.m in Sources */,
+				EA955AFC1E58A41D0024B9B8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA955B081E58A41D0024B9B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA955B091E58A41D0024B9B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA955B0C1E58A41D0024B9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EADE8BBC1E58A4FC0025CA98 /* Default.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA955B0D1E58A41D0024B9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EADE8BBC1E58A4FC0025CA98 /* Default.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA955B0F1E58A41D0024B9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UGFFRZX2C8;
+				INFOPLIST_FILE = Wannatalk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhurov.Wannatalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EA955B101E58A41D0024B9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UGFFRZX2C8;
+				INFOPLIST_FILE = Wannatalk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhurov.Wannatalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA955AF21E58A41D0024B9B8 /* Build configuration list for PBXProject "Wannatalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA955B0C1E58A41D0024B9B8 /* Debug */,
+				EA955B0D1E58A41D0024B9B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA955B0E1E58A41D0024B9B8 /* Build configuration list for PBXNativeTarget "Wannatalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA955B0F1E58A41D0024B9B8 /* Debug */,
+				EA955B101E58A41D0024B9B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA955AEF1E58A41D0024B9B8 /* Project object */;
+}
