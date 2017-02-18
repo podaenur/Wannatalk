@@ -55,6 +55,7 @@
 		EAC3B7571E58CD0A002DEF30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAC3B75D1E58CD40002DEF30 /* Default.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Default.xcconfig; sourceTree = "<group>"; };
 		EAC3B7611E58CF8A002DEF30 /* WTModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTModelTests.m; sourceTree = "<group>"; };
+		EAC3B7641E58E860002DEF30 /* WTParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTParsing.h; sourceTree = "<group>"; };
 		EADE8BC81E58A6FD0025CA98 /* WTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMainViewController.h; sourceTree = "<group>"; };
 		EADE8BC91E58A6FD0025CA98 /* WTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMainViewController.m; sourceTree = "<group>"; };
 		EADE8BCA1E58A6FD0025CA98 /* WTMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTMainViewController.xib; sourceTree = "<group>"; };
@@ -136,11 +137,20 @@
 			path = WannatalkTests;
 			sourceTree = "<group>";
 		};
+		EAC3B7631E58E7FA002DEF30 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EAC3B7641E58E860002DEF30 /* WTParsing.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		EADE8BBD1E58A5090025CA98 /* Code */ = {
 			isa = PBXGroup;
 			children = (
 				EADE8BC01E58A6350025CA98 /* Apps */,
 				EA79955A1E58AD5B00FEEF40 /* Entities */,
+				EAC3B7631E58E7FA002DEF30 /* Protocols */,
 				EADE8BBF1E58A5FC0025CA98 /* Screens */,
 			);
 			name = Code;
