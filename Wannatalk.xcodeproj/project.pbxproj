@@ -17,8 +17,10 @@
 		EA955AFF1E58A41D0024B9B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA955AFE1E58A41D0024B9B8 /* AppDelegate.m */; };
 		EA955B071E58A41D0024B9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA955B061E58A41D0024B9B8 /* Assets.xcassets */; };
 		EA955B0A1E58A41D0024B9B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA955B081E58A41D0024B9B8 /* LaunchScreen.storyboard */; };
-		EAC3B7561E58CD0A002DEF30 /* WannatalkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC3B7551E58CD0A002DEF30 /* WannatalkTests.m */; };
 		EAC3B75E1E58CD40002DEF30 /* Default.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EAC3B75D1E58CD40002DEF30 /* Default.xcconfig */; };
+		EAC3B75F1E58CF15002DEF30 /* WTFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = EA79955F1E58ADED00FEEF40 /* WTFrame.m */; };
+		EAC3B7601E58CF18002DEF30 /* WTMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7995621E58ADFA00FEEF40 /* WTMetadata.m */; };
+		EAC3B7621E58CF8A002DEF30 /* WTModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC3B7611E58CF8A002DEF30 /* WTModelTests.m */; };
 		EADE8BCB1E58A6FD0025CA98 /* WTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EADE8BC91E58A6FD0025CA98 /* WTMainViewController.m */; };
 		EADE8BCC1E58A6FD0025CA98 /* WTMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EADE8BCA1E58A6FD0025CA98 /* WTMainViewController.xib */; };
 /* End PBXBuildFile section */
@@ -50,9 +52,9 @@
 		EA955B091E58A41D0024B9B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA955B0B1E58A41D0024B9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAC3B7531E58CD0A002DEF30 /* WannatalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WannatalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAC3B7551E58CD0A002DEF30 /* WannatalkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WannatalkTests.m; sourceTree = "<group>"; };
 		EAC3B7571E58CD0A002DEF30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAC3B75D1E58CD40002DEF30 /* Default.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Default.xcconfig; sourceTree = "<group>"; };
+		EAC3B7611E58CF8A002DEF30 /* WTModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTModelTests.m; sourceTree = "<group>"; };
 		EADE8BC81E58A6FD0025CA98 /* WTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMainViewController.h; sourceTree = "<group>"; };
 		EADE8BC91E58A6FD0025CA98 /* WTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMainViewController.m; sourceTree = "<group>"; };
 		EADE8BCA1E58A6FD0025CA98 /* WTMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTMainViewController.xib; sourceTree = "<group>"; };
@@ -128,8 +130,8 @@
 		EAC3B7541E58CD0A002DEF30 /* WannatalkTests */ = {
 			isa = PBXGroup;
 			children = (
-				EAC3B7551E58CD0A002DEF30 /* WannatalkTests.m */,
 				EAC3B7571E58CD0A002DEF30 /* Info.plist */,
+				EAC3B7611E58CF8A002DEF30 /* WTModelTests.m */,
 			);
 			path = WannatalkTests;
 			sourceTree = "<group>";
@@ -137,8 +139,8 @@
 		EADE8BBD1E58A5090025CA98 /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				EA79955A1E58AD5B00FEEF40 /* Entities */,
 				EADE8BC01E58A6350025CA98 /* Apps */,
+				EA79955A1E58AD5B00FEEF40 /* Entities */,
 				EADE8BBF1E58A5FC0025CA98 /* Screens */,
 			);
 			name = Code;
@@ -314,7 +316,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC3B7561E58CD0A002DEF30 /* WannatalkTests.m in Sources */,
+				EAC3B7621E58CF8A002DEF30 /* WTModelTests.m in Sources */,
+				EAC3B75F1E58CF15002DEF30 /* WTFrame.m in Sources */,
+				EAC3B7601E58CF18002DEF30 /* WTMetadata.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +516,7 @@
 				EAC3B75C1E58CD0A002DEF30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
