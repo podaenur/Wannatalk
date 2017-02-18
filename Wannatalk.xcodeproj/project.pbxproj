@@ -11,6 +11,7 @@
 		EA7995551E58AB5F00FEEF40 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EA7995531E58AB5F00FEEF40 /* README.md */; };
 		EA7995581E58ACC700FEEF40 /* game1_table_apple_one.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7995561E58ACC700FEEF40 /* game1_table_apple_one.png */; };
 		EA7995591E58ACC700FEEF40 /* game1_table_apple_one.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA7995571E58ACC700FEEF40 /* game1_table_apple_one.plist */; };
+		EA7995631E58ADFA00FEEF40 /* WTMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7995621E58ADFA00FEEF40 /* WTMetadata.m */; };
 		EA955AFC1E58A41D0024B9B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA955AFB1E58A41D0024B9B8 /* main.m */; };
 		EA955AFF1E58A41D0024B9B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA955AFE1E58A41D0024B9B8 /* AppDelegate.m */; };
 		EA955B071E58A41D0024B9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA955B061E58A41D0024B9B8 /* Assets.xcassets */; };
@@ -36,6 +37,8 @@
 		EA7995531E58AB5F00FEEF40 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EA7995561E58ACC700FEEF40 /* game1_table_apple_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = game1_table_apple_one.png; sourceTree = "<group>"; };
 		EA7995571E58ACC700FEEF40 /* game1_table_apple_one.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = game1_table_apple_one.plist; sourceTree = "<group>"; };
+		EA7995611E58ADFA00FEEF40 /* WTMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMetadata.h; sourceTree = "<group>"; };
+		EA7995621E58ADFA00FEEF40 /* WTMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMetadata.m; sourceTree = "<group>"; };
 		EA955AF71E58A41D0024B9B8 /* Wannatalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wannatalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA955AFB1E58A41D0024B9B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA955AFD1E58A41D0024B9B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +73,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA79955A1E58AD5B00FEEF40 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				EA7995611E58ADFA00FEEF40 /* WTMetadata.h */,
+				EA7995621E58ADFA00FEEF40 /* WTMetadata.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
 		EA955AEE1E58A41D0024B9B8 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +132,7 @@
 		EADE8BBD1E58A5090025CA98 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				EA79955A1E58AD5B00FEEF40 /* Entities */,
 				EADE8BC01E58A6350025CA98 /* Apps */,
 				EADE8BBF1E58A5FC0025CA98 /* Screens */,
 			);
@@ -287,6 +300,7 @@
 				EA955AFF1E58A41D0024B9B8 /* AppDelegate.m in Sources */,
 				EA7995551E58AB5F00FEEF40 /* README.md in Sources */,
 				EA955AFC1E58A41D0024B9B8 /* main.m in Sources */,
+				EA7995631E58ADFA00FEEF40 /* WTMetadata.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
